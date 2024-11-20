@@ -1,0 +1,9 @@
+<form action="post">
+    <input type="text" [(ngModel)]= "nuevoObjeto" [ngModelOptions]="{standalone: true}">
+    <button (click)= "addCompra()" >Añadir</button>
+</form>
+<ul>
+    @for(nuevoObjetoAdd of objetos; track nuevoObjetoAdd){
+      <li>{{ nuevoObjetoAdd.value }}<button (click)= "deleteCompra(nuevoObjetoAdd.id)">Borrar</button></li>
+        }
+</ul>

@@ -1,0 +1,48 @@
+form{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    input{
+        padding: .6em;
+        font-size: 1.2em;
+    }
+    input, input:focus{
+        border: 3px solid var(--rojo);
+        border-radius: .5em;
+        outline: none;
+        background: var(--naranja);
+    }
+    button{
+        padding: .6em;
+        font-size: 1em;
+    }
+}
+button{
+        border: 2px solid var(--rojo);
+        border-radius: .5em;
+        background: var(--rojo);
+        color: var(--azul);
+    }   
+ul{
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    list-style: none;
+    border: 3px solid var(--rojo);
+    border-radius: .5em;
+    padding: .3em;
+    background: var(--naranjab);
+    margin: .2em 0;
+    width: 90%;
+    button{
+        padding: .5em;
+        font-size: .8em;
+    }
+}
